@@ -37,7 +37,11 @@ function App() {
     setError('');
 
     try {
-      const response = await fetch(`http://localhost:3001/api/attendance?total=${totalLectures}&present=${presentLectures}`);
+    // update  it for loacl host
+      const response = await fetch(
+  `${import.meta.env.VITE_API_URL}/api/attendance?total=${totalLectures}&present=${presentLectures}`
+);
+
       const data = await response.json();
 
       if (data.success) {
