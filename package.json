@@ -4,15 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run server:dev\" \"vite\"",
-    "server:dev": "cd server && npm run dev",
-    "server:install": "cd server && npm install",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "start:frontend": "vite",
-    "start:backend": "cd server && npm start"
-  },
+  "dev": "concurrently \"npm run server:dev\" \"vite\"",
+  "server:dev": "cd server && npm run dev",
+  "build": "vite build",
+  "start": "node server/app.js"
+},
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
