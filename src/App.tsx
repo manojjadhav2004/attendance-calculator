@@ -37,11 +37,7 @@ function App() {
     setError('');
 
     try {
-    // update  it for loacl host
-      const response = await fetch(
-  `${import.meta.env.VITE_API_URL}/api/attendance?total=${totalLectures}&present=${presentLectures}`
-);
-
+      const response = await fetch(`https://attendance-calculator-fqy0.onrender.com/api/attendance?total=${totalLectures}&present=${presentLectures}`);
       const data = await response.json();
 
       if (data.success) {

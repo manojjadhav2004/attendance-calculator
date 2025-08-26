@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
-
+app.use(cors({
+  origin: "https://attendance-calculator-1.onrender.com"
+}));
 const app = express();
 const PORT = process.env.PORT || 3001;
 
