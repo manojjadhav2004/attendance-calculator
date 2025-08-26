@@ -1,5 +1,5 @@
 # 🎓 Attendance Calculator - Full Stack Application
-
+LINK TO TEST: https://attendance-calculator-1.onrender.com/
 A modern, full-stack web application that helps students calculate whether they can bunk lectures or need to attend more to maintain the required 75% attendance.
 
 ## ✨ Features
